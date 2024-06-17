@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css" />
+  </head>
+  <body>
+    <h1>Gait Impairment Prediction Result</h1>
+    <p>{{ gait_impairment }}</p>
+    <h2>Explanation:</h2>
+    <ul>
+      {% for item in explanation %}
+      <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+    <div class="go-back">
+      <a href="/" class="back-btn">Go Back to Input Page</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gait Impairment Prediction</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css" />
+  </head>
+  <body>
+    <div class="header_container">
+      <h2>Gait Impairment Prediction</h2>
+    </div>
+    <div class="container">
+      <form action="/result" method="post">
+        <label for="sex">Sex:</label><br />
+        <input
+          type="number"
+          id="sex"
+          name="sex"
+          step="1"
+          placeholder="Enter 0 for Female, 1 for Male"
+          required
+        /><br />
+        <label for="age">Age:</label><br />
+        <input
+          type="number"
+          id="age"
+          name="age"
+          step="1"
+          placeholder="Enter your age"
+          required
+        /><br />
+        <label for="height">Height (cm):</label><br />
+        <input
+          type="number"
+          id="height"
+          name="height"
+          step="0.01"
+          placeholder="Enter height in cm"
+          required
+        /><br />
+        <label for="body_weight">Body Weight (kg):</label><br />
+        <input
+          type="number"
+          id="body_weight"
+          name="body_weight"
+          step="0.01"
+          placeholder="Enter weight in kg"
+          required
+        /><br />
+        <label for="body_mass">Body Mass Index (BMI):</label><br />
+        <input
+          type="number"
+          id="body_mass"
+          name="body_mass"
+          step="0.01"
+          placeholder="Enter your BMI"
+          required
+        /><br />
+        <label for="shoe_size">Shoe Size (EU):</label><br />
+        <input
+          type="number"
+          id="shoe_size"
+          name="shoe_size"
+          step="0.01"
+          placeholder="Enter your shoe size"
+          required
+        /><br />
+        <label for="orthopedic_insole">Orthopedic Insole:</label><br />
+        <input
+          type="number"
+          id="orthopedic_insole"
+          name="orthopedic_insole"
+          step="0.01"
+          placeholder="Do you use orthopedic insoles? 0 for No, 1 for Yes"
+          required
+        /><br />
+        <label for="stride_length">Stride Length (cm):</label><br />
+        <input
+          type="number"
+          id="stride_length"
+          name="stride_length"
+          step="0.01"
+          placeholder="Enter stride length in cm"
+          required
+        /><br />
+        <label for="step_frequency">Step Frequency (steps/min):</label><br />
+        <input
+          type="number"
+          id="step_frequency"
+          name="step_frequency"
+          step="0.01"
+          placeholder="Enter step frequency in steps/min"
+          required
+        /><br />
+        <label for="balance_score">Balance Score:</label><br />
+        <input
+          type="number"
+          id="balance_score"
+          name="balance_score"
+          step="0.01"
+          placeholder="Enter your balance score"
+          required
+        /><br />
+        <label for="muscle_strength">Muscle Strength (N):</label><br />
+        <input
+          type="number"
+          id="muscle_strength"
+          name="muscle_strength"
+          step="0.01"
+          placeholder="Enter muscle strength in N"
+          required
+        /><br />
+        <label for="joint_range_of_motion"
+          >Joint Range of Motion (degrees):</label
+        ><br />
+        <input
+          type="number"
+          id="joint_range_of_motion"
+          name="joint_range_of_motion"
+          step="0.01"
+          placeholder="Enter joint range of motion in degrees"
+          required
+        /><br />
+        <label for="injury_history">Injury History:</label><br />
+        <input
+          type="number"
+          id="injury_history"
+          name="injury_history"
+          step="0.01"
+          placeholder="Any injury history? 0 for No, 1 for Yes"
+          required
+        /><br />
+        <label for="neuro_condition">Neurological Condition:</label><br />
+        <input
+          type="number"
+          id="neuro_condition"
+          name="neuro_condition"
+          step="0.01"
+          placeholder="Any neurological conditions? 0 for No, 1 for Yes"
+          required
+        /><br /><br />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
