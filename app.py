@@ -77,3 +77,6 @@ def result():
     explanation.append(f"Model prediction class: {readmission_prediction_class}")
 
     return render_template('result.html', gait_impairment=gait_impairment, explanation=explanation)
+
+if __name__ == '__main__':
+  pass  # Placeholder for production server
