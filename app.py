@@ -2,6 +2,7 @@ from flask import Flask, render_template, request
 import numpy as np
 import joblib
 from keras.models import load_model
+import os
 
 app = Flask(__name__)
 
@@ -79,4 +80,5 @@ def result():
     return render_template('result.html', gait_impairment=gait_impairment, explanation=explanation)
 
 if __name__ == '__main__':
-  pass  # Placeholder for production server
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
